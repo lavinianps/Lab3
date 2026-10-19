@@ -3,20 +3,22 @@ package filmnow;
 /**
  * Sistema que mantém os seus filmes prediletos. Podem existir 100 filmes.
  *
- * @author eliane
+ * @author Lavínia Almeida Nogueira Pereira Soares
  *
  */
 public class FilmNow {
 
     private static final int TAMANHO = 100;
+    private static final int TAMANHO2 = 10;
 
-    private String[] filmes; //uma representacao simploria da lista de filmes
-
+    private Filme[] filmes; //uma representacao simploria da lista de filmes
+    private Filme[] hotList; //uma representacao simploria da lista de filmes hots
     /**
      * Cria o FilmNow.
      */
     public FilmNow() {
-        this.filmes = new String[TAMANHO];
+        this.filmes = new Filme[TAMANHO];
+        this.hotList = new Filme[TAMANHO2];
     }
 
     /**
